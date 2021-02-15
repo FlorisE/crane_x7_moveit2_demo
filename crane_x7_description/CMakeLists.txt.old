@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(crane_x7_description)
+
+find_package(ament_cmake REQUIRED)
+
+install(
+  DIRECTORY config
+  DESTINATION config
+)
+
+install(
+  DIRECTORY launch
+  DESTINATION launch
+)
+
+install(
+  DIRECTORY meshes
+  DESTINATION meshes
+)
+
+install(
+  DIRECTORY urdf
+  DESTINATION urdf
+)
+
+ament_package()
